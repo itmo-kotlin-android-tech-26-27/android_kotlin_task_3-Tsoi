@@ -1,0 +1,33 @@
+[
+  {
+    "id": "boxing-center",
+    "name": "Бокс",
+    "location": "Центр · Лиговский проспект, 50",
+    "groups": [
+      {"id": "initial", "name": "Начальная", "athleteCount": 18, "trainingCount": 12, "attendedVisits": 177},
+      {"id": "juniors", "name": "Юниоры", "athleteCount": 16, "trainingCount": 12, "attendedVisits": 121},
+      {"id": "senior", "name": "Старшая", "athleteCount": 20, "trainingCount": 12, "attendedVisits": 218},
+      {"id": "adult", "name": "Взрослая", "athleteCount": 14, "trainingCount": 12, "attendedVisits": 131}
+    ]
+  },
+  {
+    "id": "judo-north",
+    "name": "Дзюдо",
+    "location": "Север · проспект Просвещения, 32",
+    "groups": [
+      {"id": "children", "name": "Детская", "athleteCount": 15, "trainingCount": 12, "attendedVisits": 153},
+      {"id": "juniors", "name": "Юниоры", "athleteCount": 12, "trainingCount": 12, "attendedVisits": 120},
+      {"id": "adult", "name": "Взрослая", "athleteCount": 10, "trainingCount": 12, "attendedVisits": 96}
+    ]
+  },
+  {
+    "id": "swimming-south",
+    "name": "Плавание",
+    "location": "Юг · Московский проспект, 120",
+    "groups": [
+      {"id": "initial", "name": "Начальная", "athleteCount": 14, "trainingCount": 12, "attendedVisits": 134},
+      {"id": "adult", "name": "Взрослая", "athleteCount": 12, "trainingCount": 12, "attendedVisits": 118},
+      {"id": "new-group", "name": "Оздоровительная", "athleteCount": 8, "trainingCount": 0, "attendedVisits": 0}
+    ]
+  }
+]
