@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Спортивная аналитика</string>
+    <string name="sections_title">Спортивные секции</string>
+    <string name="sections_subtitle">Выберите секцию для просмотра показателей</string>
+    <string name="organization_name">СПОРТИВНАЯ АНАЛИТИКА</string>
+    <string name="search_hint">Название или адрес</string>
+    <string name="search_clear">Очистить поиск</string>
+    <string name="back">Назад</string>
+    <string name="home">На главную</string>
+    <string name="to_sections">К списку секций</string>
+    <string name="retry">Повторить</string>
+    <string name="loading">Загрузка данных</string>
+    <string name="load_error_title">Не удалось загрузить данные</string>
+    <string name="load_error_message">Попробуйте загрузить данные ещё раз.</string>
+    <string name="sections_empty_title">Секций пока нет</string>
+    <string name="sections_empty_message">Пока нет секций для просмотра. Попробуйте обновить список.</string>
+    <string name="search_empty_title">Ничего не найдено</string>
+    <string name="search_empty_message">Попробуйте другое название или адрес.</string>
+    <string name="groups_empty_title">Групп пока нет</string>
+    <string name="groups_empty_message">В выбранной секции пока нет групп. Можно вернуться к списку секций.</string>
+    <string name="section_not_found">Секция не найдена</string>
+    <string name="group_not_found">Группа не найдена</string>
+    <string name="not_found_message">Запрошенных данных нет. Вернитесь к списку секций.</string>
+    <string name="period_label">ПОСЛЕДНИЕ 4 НЕДЕЛИ</string>
+    <string name="section_attendance">Средняя посещаемость</string>
+    <string name="group_attendance">Посещаемость группы</string>
+    <string name="groups_title">Группы секции</string>
+    <string name="group_screen_title">Аналитика группы</string>
+    <string name="athletes_label">Спортсменов</string>
+    <string name="groups_label">Групп</string>
+    <string name="trainings_label">Тренировок</string>
+    <string name="percent_format">%1$d%%</string>
+    <string name="no_attendance">—</string>
+    <string name="visits_format">%1$d из %2$d возможных посещений</string>
+    <string name="section_meta_format">%1$s · %2$s</string>
+    <string name="groups_count_format">Групп: %1$d</string>
+    <string name="athletes_count_format">Спортсменов: %1$d</string>
+    <string name="four_weeks">за 4 недели</string>
+    <string name="attendance_formula" formatted="false">Посещаемость = фактические посещения / все возможные посещения × 100%.</string>
+    <string name="attendance_explanation">Возможные посещения — число спортсменов × число тренировок. Итог секции учитывает посещения всех её групп.</string>
+    <string name="no_trainings">За этот период ещё не было тренировок.</string>
+    <string name="group_select_hint">Выберите группу, чтобы посмотреть её показатели.</string>
+</resources>
