@@ -14,7 +14,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import com.example.task_3.R
 import com.example.task_3.ui.ScreenStatus
@@ -49,13 +48,13 @@ fun GroupScreen(
                             vertical = AppDimens.spaceMedium,
                         ),
                     ) {
-                        AppButton(stringResource(R.string.home), onHome, Modifier.testTag("home_button"))
+                        AppButton(stringResource(R.string.home), onHome)
                     }
                 }
             }
         },
     ) { padding ->
-        Box(Modifier.fillMaxSize().padding(padding).testTag("screen_group")) {
+        Box(Modifier.fillMaxSize().padding(padding)) {
             StateContent(state.status, R.string.group_not_found, onRetry, onHome) {
                 val group = state.group ?: return@StateContent
                 val stats = state.stats ?: return@StateContent

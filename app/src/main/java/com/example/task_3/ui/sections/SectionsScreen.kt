@@ -23,7 +23,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
@@ -52,10 +51,10 @@ fun SectionsScreen(
             )
         },
     ) { padding ->
-        Box(Modifier.fillMaxSize().padding(padding).testTag("screen_sections")) {
+        Box(Modifier.fillMaxSize().padding(padding)) {
             StateContent(state.status, R.string.section_not_found, onRetry) {
                 LazyColumn(
-                    modifier = Modifier.fillMaxSize().testTag("sections_list"),
+                    modifier = Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(AppDimens.screenPadding),
                     verticalArrangement = Arrangement.spacedBy(AppDimens.spaceNormal),
                 ) {
@@ -63,7 +62,7 @@ fun SectionsScreen(
                         OutlinedTextField(
                             value = state.query,
                             onValueChange = onQueryChange,
-                            modifier = Modifier.fillMaxWidth().testTag("sections_search"),
+                            modifier = Modifier.fillMaxWidth(),
                             placeholder = { Text(stringResource(R.string.search_hint)) },
                             trailingIcon = {
                                 if (state.query.isNotEmpty()) {
@@ -118,7 +117,7 @@ fun SectionsScreen(
 
 @Composable
 private fun SectionCard(item: SectionItemUiState, isSelected: Boolean, onClick: () -> Unit) {
-    SelectableCard(onClick, isSelected, Modifier.testTag("section_${item.section.id}")) {
+    SelectableCard(onClick, isSelected) {
         Column(
             modifier = Modifier.padding(AppDimens.screenPadding),
             verticalArrangement = Arrangement.spacedBy(AppDimens.spaceSmall),

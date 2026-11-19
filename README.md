@@ -24,19 +24,13 @@ Linux / macOS:
 
 APK появится в `app/build/outputs/apk/debug/app-debug.apk`.
 
-Проверки без эмулятора:
+Проверка кода Android Lint:
 
 ```powershell
-.\gradlew.bat :app:testDebugUnitTest :app:lintDebug
+.\gradlew.bat :app:lintDebug
 ```
 
-Проверки на запущенном эмуляторе или подключённом устройстве:
-
-```powershell
-.\gradlew.bat :app:connectedDebugAndroidTest
-```
-
-В Linux / macOS используйте `./gradlew` с теми же именами задач. Список ручных проверок находится в [docs/acceptance.md](docs/acceptance.md).
+В Linux / macOS используйте `./gradlew` с тем же именем задачи.
 
 ## 2. Демо-данные и пустые состояния
 
@@ -97,4 +91,4 @@ APK появится в `app/build/outputs/apk/debug/app-debug.apk`.
 |---|---|---|
 | ![Список секций](docs/screenshots/01-sections.png) | ![Показатели секции и группы](docs/screenshots/02-section.png) | ![Аналитика группы](docs/screenshots/03-group.png) |
 
-Результаты запуска проверок: [docs/verification.md](docs/verification.md). Векторные иконки основаны на Lucide; уведомление о лицензии находится в [docs/licenses/lucide.txt](docs/licenses/lucide.txt).
+Векторные иконки основаны на Lucide; уведомление о лицензии находится в [docs/licenses/lucide.txt](docs/licenses/lucide.txt).

@@ -15,7 +15,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import com.example.task_3.R
 import com.example.task_3.ui.components.AppHeader
@@ -45,11 +44,11 @@ fun SectionScreen(
             )
         },
     ) { padding ->
-        Box(Modifier.fillMaxSize().padding(padding).testTag("screen_section")) {
+        Box(Modifier.fillMaxSize().padding(padding)) {
             StateContent(state.status, R.string.section_not_found, onRetry, onHome) {
                 val stats = state.stats ?: return@StateContent
                 LazyColumn(
-                    modifier = Modifier.fillMaxSize().testTag("groups_list"),
+                    modifier = Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(AppDimens.screenPadding),
                     verticalArrangement = Arrangement.spacedBy(AppDimens.spaceMedium),
                 ) {
@@ -98,7 +97,7 @@ fun SectionScreen(
 
 @Composable
 private fun GroupCard(item: GroupItemUiState, isSelected: Boolean, onClick: () -> Unit) {
-    SelectableCard(onClick, isSelected, Modifier.testTag("group_${item.group.id}")) {
+    SelectableCard(onClick, isSelected) {
         Row(
             modifier = Modifier.padding(AppDimens.spaceNormal),
             verticalAlignment = Alignment.CenterVertically,

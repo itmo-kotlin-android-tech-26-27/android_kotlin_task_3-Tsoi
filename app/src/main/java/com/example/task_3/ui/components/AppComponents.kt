@@ -26,7 +26,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -67,7 +66,7 @@ fun AppHeader(
                 Surface(shape = CircleShape, color = MaterialTheme.colorScheme.primaryContainer) {
                     IconButton(
                         onClick = onBack,
-                        modifier = Modifier.size(AppDimens.navigationSize).testTag("back_button"),
+                        modifier = Modifier.size(AppDimens.navigationSize),
                     ) {
                         Icon(
                             painterResource(R.drawable.ic_arrow_back),
@@ -187,7 +186,6 @@ fun AttendanceCard(
             ) {
                 Text(
                     attendanceText(stats.percent),
-                    modifier = Modifier.testTag("attendance_value"),
                     style = if (highlighted) MaterialTheme.typography.displayMedium
                     else MaterialTheme.typography.displayLarge,
                     color = foreground,
